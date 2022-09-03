@@ -1089,14 +1089,12 @@ h4 {
 
 article p {
     font-size: 15px;
-    margin: 0 220px 0 220px;
     text-align: center;
 }
 
 article :nth-child(1) {
     font-size: 15px;
     font-weight: bold;
-    margin: 0 220px 0 220px;
 }
 
 #bloc-6 h1 {
@@ -1105,4 +1103,20 @@ article :nth-child(1) {
 
 p {
     font-size: 15px;
+}
+
+/*map*/
+iframe {
+    width: 400px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactForm {
+    flex-grow: 1;
 }
