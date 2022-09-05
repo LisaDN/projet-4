@@ -829,7 +829,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1106,6 +1106,10 @@ p {
 }
 
 /*map*/
+.border-radius {
+    border-radius: 40%;
+}
+
 iframe {
     width: 400px;
     height: 250px;
