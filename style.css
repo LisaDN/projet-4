@@ -659,10 +659,12 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757 !important;
+    filter: contrast(1);
+    /* rajouter pour augmenter contraste*/
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .hero-bloc-text {
@@ -779,6 +781,7 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+
 }
 
 .tc-white {
@@ -787,6 +790,8 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
+    filter: contrast(1);
+    /* rajouter pour augmenter contraste*/
     color: #FFFFFF !important;
 }
 
@@ -857,13 +862,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -884,10 +889,10 @@ h4 {
         position: relative;
     }
 
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
 
     .bloc-group,
     .bloc-group .bloc {
@@ -898,12 +903,10 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
-@media (max-width: 767px) {
+H1 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1086,23 +1089,24 @@ h4 {
 
 
 /*code ajouté après modification*/
+nav a {
+    font-size: 18px;
+}
 
-article p {
-    font-size: 15px;
+article {
     text-align: center;
 }
 
 article :nth-child(1) {
-    font-size: 15px;
     font-weight: bold;
 }
 
-#bloc-6 h1 {
-    color: #000000;
+p {
+    font-size: 18px;
 }
 
-p {
-    font-size: 15px;
+#bloc-7 h2 {
+    font-weight: bold;
 }
 
 /*map*/
@@ -1111,16 +1115,43 @@ p {
 }
 
 iframe {
-    width: 400px;
+    width: auto;
     height: 250px;
     margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.contactForm {
-    flex-grow: 1;
+.nav a:hover {
+    border-bottom: solid 2px #F3976C;
+}
+
+/*centrage image responsive mobile*/
+@media (max-width: 767px) {
+    .img-responsive {
+        margin: 0 auto;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #bloc-4-portfolio p {
+        margin-bottom: 40px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    iframe {
+        margin: 20px 20px 50px 10px;
+    }
 }
