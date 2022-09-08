@@ -906,7 +906,7 @@ h4 {
     }
 }
 
-H1 @media (max-width: 767px) {
+@media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1102,7 +1102,7 @@ article :nth-child(1) {
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 #bloc-7 h2 {
@@ -1138,20 +1138,27 @@ iframe {
         margin: 0 auto;
     }
 
-    .row {
-        margin-right: 0;
-        margin-left: 0;
-    }
-
     #bloc-4-portfolio p {
         margin-bottom: 40px;
     }
 
     .contact {
         display: block;
+        width: 85%;
     }
 
     iframe {
         margin: 20px 20px 50px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .btn {
+        white-space: normal;
     }
 }
