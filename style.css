@@ -629,16 +629,18 @@ a[data-lightbox]:hover img {
 
 .next-lightbox {
     padding: 6px 8px 1px 13px;
-    right: 25px;
+    right: 10px;
 }
 
 .prev-lightbox {
     padding: 6px 13px 1px 10px;
-    left: 25px;
+    left: 10px;
 }
 
 .snapshot-lb .modal-body {
-    padding-bottom: 45px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .snapshot-lb .lightbox-caption {
@@ -712,10 +714,12 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 1.4em;
 }
 
@@ -1125,7 +1129,6 @@ iframe {
     height: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 .contact {
@@ -1140,13 +1143,18 @@ iframe {
 
 
 
-/*centrage image responsive mobile*/
+/*responsive mobile*/
 
 
 @media (max-width: 767px) {
     .bloc .container {
         max-inline-size: none;
         width: 100%;
+    }
+
+    .page-container {
+        max-inline-size: none;
+        /* width: 100%; */
     }
 
     .img-responsive {
@@ -1159,11 +1167,6 @@ iframe {
 
     .title-size {
         padding: 5px;
-    }
-
-
-    iframe {
-        margin: 20px 20px 50px 10px;
     }
 
     article {
@@ -1180,11 +1183,24 @@ iframe {
     .btn {
         white-space: normal;
     }
+
+    .contact-content {
+        max-width: fit-content;
+    }
 }
+
+
 
 @media (max-width: 900px) {
     .contact {
         display: block;
-        width: 85%;
+        margin: auto;
     }
+
+    iframe {
+        width: 90%;
+        margin-left: 10px;
+
+    }
+
 }
