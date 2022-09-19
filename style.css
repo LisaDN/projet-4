@@ -1187,6 +1187,10 @@ iframe {
     .contact-content {
         max-width: fit-content;
     }
+
+    .navbar-brand {
+        float: none;
+    }
 }
 
 
