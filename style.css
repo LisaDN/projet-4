@@ -42,6 +42,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+
 }
 
 .bloc-lg {
@@ -1095,10 +1096,15 @@ nav a {
 
 article {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
 }
 
-article :nth-child(1) {
-    font-weight: bold;
+.title-size {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
 }
 
 p {
@@ -1132,8 +1138,17 @@ iframe {
     border-bottom: solid 2px #F3976C;
 }
 
+
+
 /*centrage image responsive mobile*/
+
+
 @media (max-width: 767px) {
+    .bloc .container {
+        max-inline-size: none;
+        width: 100%;
+    }
+
     .img-responsive {
         margin: 0 auto;
     }
@@ -1142,9 +1157,17 @@ iframe {
         margin-bottom: 40px;
     }
 
+    .title-size {
+        padding: 5px;
+    }
+
 
     iframe {
         margin: 20px 20px 50px 10px;
+    }
+
+    article {
+        max-width: 80%;
     }
 }
 
